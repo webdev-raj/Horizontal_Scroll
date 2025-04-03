@@ -1,0 +1,79 @@
+@font-face {
+    font-family: monument;
+    src: url("./Assets/fonts/MonumentExtended-Regular.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background: #161616;
+    font-family: monument;
+    font-weight: lighter;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+}
+
+.block {
+    position: relative;
+    height: 400px;
+    width: 500px;
+    margin: 200px 300px 20px 80px;
+    background-color: red;
+}
+
+.block-1 {
+    background-image: url("./Assets/images/img-one.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.block-2 {
+    background-image: url("./Assets/images/img-two.jpeg");
+    background-position: top;
+    background-size: cover;
+}
+.block-3 {
+    background-image: url("./Assets/images/img-three.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.block-4 {
+    background-image: url("./Assets/images/img-four.jpeg");
+    background-position: left;
+    background-size: cover;
+}
+.block-5 {
+    background-image: url("./Assets/images/img-five.jpeg");
+    background-position: top;
+    background-size: cover;
+}
+
+.block h1{
+    position: absolute;
+    font-size: 2.9rem;
+    letter-spacing: -1px;
+    mix-blend-mode: difference;
+}
+
+
+.block-1 h1,
+.block-3 h1,
+.block-5 h1{
+    right: -60px;
+    bottom: 20px;
+}
+
+.block-2 h1,.block-4 h1{
+    left: 10px;
+    top: 20px;
+}
